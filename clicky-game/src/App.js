@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
-import logo from './logo.svg'
+import NavBar from './components/Navs/NavBar'
+import Home from './components/Home/Home'
 import './App.css'
-import NavTabs from './components/NavTabs'
 
-function App () {
-  return (
-    <div className='App' />
-  )
+class App extends Component {
+  render () {
+    return (
+      <Router>
+        <div>
+          <NavBar />
+          <Route exact path='/' component={Home} />
+        </div>
+      </Router>
+    )
+  }
 }
 
 export default App
