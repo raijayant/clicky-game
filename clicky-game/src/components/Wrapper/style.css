@@ -1,0 +1,14 @@
+.wrapper {
+    /*background: rgb(175, 175, 175);*/
+    background-image: url('https://i.hipertextual.com/2017/03/23/SuperMarioBros.-Desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    padding-bottom: 50px;
+  }
